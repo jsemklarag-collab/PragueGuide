@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Discover Prague</title>
+
+    <!-- AOS CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <!-- Glide.js CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.6.0/css/glide.core.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.6.0/css/glide.theme.min.css" />
+    <!-- Lightbox2 CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" />
+
+    <!-- My CSS file -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Library: AOS -->
+    <!-- Library: Glide.js -->
+    <!-- Library: Granim.js -->
+    <!-- Library: Lightbox2 -->
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <a href="#home" class="nav-logo">Discover Prague</a>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#neighbourhoods">Neighbourhoods</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <!-- Granim.js will animate the gradient background of this section -->
+    <section class="hero" id="home">
+      <canvas id="granim-canvas"></canvas>
+      <div class="hero-left" data-aos="fade-right">
+        <p class="hero-small-text">Central Bohemia, Czechia</p>
+        <h1>Discover Prague</h1>
+        <p class="hero-desc">
+          A city of a hundred spires, cobblestone lanes and some of the best
+          beer in the world. Prague rewards every curious traveller.
+        </p>
+        <a href="#neighbourhoods" class="btn">Explore Prague</a>
+      </div>
+      <div class="hero-right" data-aos="fade-left">
+        <img
+          src="https://images.unsplash.com/photo-1541849546-216549ae216d?w=900&q=80"
+          alt="Prague skyline"
+          class="hero-img" />
+      </div>
+    </section>
+
+    <!-- CAROUSEL / NEIGHBOURHOODS -->
+    <section class="carousel-section" id="neighbourhoods">
+      <div class="section-title" data-aos="fade-up">
+        <p class="small-label">Explore the city</p>
+        <h2>Prague's Neighbourhoods</h2>
+        <p class="section-sub">
+          Click any photo to view it bigger. Six iconic places to explore.
+        </p>
+      </div>
+
+      <div class="glide" id="myCarousel" data-aos="fade-up">
+        <div class="glide__track" data-glide-el="track">
+          <ul class="glide__slides">
+            <!-- Card 1 - clicking the image opens Lightbox2 -->
+            <li class="glide__slide">
+              <div class="card">
+                <a
+                  href="./images/Charles Bridge.jpg"
+                  data-lightbox="prague"
+                  data-title="Charles Bridge">
+                  <img
+                    src="./images/Charles Bridge.jpg"
+                    alt="Charles Bridge"
+                    class="card-img" />
+                </a>
+                <div class="card-info">
+                  <h3>Charles Bridge</h3>
+                  <p>Medieval gateway over the Vltava river</p>
+                </div>
+              </div>
+            </li>
+
+            <!-- Card 2 -->
+            <li class="glide__slide">
+              <div class="card">
+                <a
+                  href="./images/Prague Castle.jpg"
+                  data-lightbox="prague"
+                  data-title="Prague Castle">
+                  <img
+                    src="./images/Prague Castle.jpg"
+                    alt="Prague Castle"
+                    class="card-img" />
+                </a>
+                <div class="card-info">
+                  <h3>Prague Castle</h3>
+                  <p>The world's largest ancient castle complex</p>
+                </div>
+              </div>
+            </li>
+
+            <!-- Card 3 -->
+            <li class="glide__slide">
+              <div class="card">
+                <a
+                  href="./images/Old Town Square.jpg"
+                  data-lightbox="prague"
+                  data-title="Old Town Square">
+                  <img
+                    src="./images/Old Town Square.jpg"
+                    alt="Old Town Square"
+                    class="card-img" />
+                </a>
+                <div class="card-info">
+                  <h3>Old Town Square</h3>
+                  <p>Home to the famous Astronomical Clock</p>
+                </div>
+              </div>
+            </li>
+
+            <!-- Card 4 -->
+            <li class="glide__slide">
+              <div class="card">
+                <a
+                  href="./images/Mala Strana.jpg"
+                  data-lightbox="prague"
+                  data-title="Mala Strana">
+                  <img
+                    src="./images/Mala Strana.jpg"
+                    alt="Mala Strana"
+                    class="card-img" />
+                </a>
+                <div class="card-info">
+                  <h3>Malá Strana</h3>
+                  <p>Baroque palaces and hidden garden terraces</p>
+                </div>
+              </div>
+            </li>
+
+            <!-- Card 5 -->
+            <li class="glide__slide">
+              <div class="card">
+                <a
+                  href="./images/Josefov.jpg"
+                  data-lightbox="prague"
+                  data-title="Josefov">
+                  <img
+                    src="./images/Josefov.jpg"
+                    alt="Josefov"
+                    class="card-img" />
+                </a>
+                <div class="card-info">
+                  <h3>Josefov</h3>
+                  <p>Prague's historic Jewish Quarter</p>
+                </div>
+              </div>
+            </li>
+
+            <!-- Card 6 -->
+            <li class="glide__slide">
+              <div class="card">
+                <a
+                  href="./images/Vysehrad.jpg"
+                  data-lightbox="prague"
+                  data-title="Vysehrad">
+                  <img
+                    src="./images/Vysehrad.jpg"
+                    alt="Vysehrad"
+                    class="card-img" />
+                </a>
+                <div class="card-info">
+                  <h3>Vyšehrad</h3>
+                  <p>Ancient fortress with great Vltava views</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Carousel arrows -->
+        <div class="glide__arrows" data-glide-el="controls">
+          <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+            &#8592;
+          </button>
+          <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+            &#8594;
+          </button>
+        </div>
+
+        <!-- Carousel dots -->
+        <div class="glide-bullets" data-glide-el="controls[nav]">
+          <button class="glide__bullet" data-glide-dir="=0"></button>
+          <button class="glide__bullet" data-glide-dir="=1"></button>
+          <button class="glide__bullet" data-glide-dir="=2"></button>
+          <button class="glide__bullet" data-glide-dir="=3"></button>
+          <button class="glide__bullet" data-glide-dir="=4"></button>
+          <button class="glide__bullet" data-glide-dir="=5"></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer" id="contact">
+      <p class="footer-name">Discover Prague</p>
+      <p class="footer-tag">Where every cobblestone tells a story.</p>
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#neighbourhoods">Neighbourhoods</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <p class="footer-copy">&copy; 2025 Discover Prague</p>
+    </footer>
+
+    <!-- AOS JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <!-- Glide.js JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.6.0/glide.min.js"></script>
+    <!-- Granim.js JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/granim/2.0.0/granim.min.js"></script>
+    <!-- Lightbox2 JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox-plus-jquery.min.js"></script>
+    <!-- My JS file -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
